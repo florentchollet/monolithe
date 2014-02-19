@@ -18,7 +18,7 @@ mnlt.factory("noticesFactory", function($http, $q) {
 });
 
 
-// fnhPlacesCtrl
+// noticesCtrl
 mnlt.controller("noticesCtrl", noticesCtrl = function($scope, noticesFactory) {
 	return noticesFactory.getNotices().success(function(data) {
 		return $scope.notices = data.posts;
