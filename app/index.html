@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <title>Monolithe</title>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="UTF-8">
+    
+    <link type='text/css' rel='stylesheet' href='bower_components/reset-css/reset.css' />
+    <!--<link type='text/css' rel='stylesheet' href='static/css/all.min.css' />-->
+    <script type="text/javascript" src="bower_components/angular/angular.min.js"></script>
+   <script type="text/javascript" src="controllers/controllers.js"></script>
+    
+  </head>
+  <body ng-app="mnlt">
+    
+    <section ng-controller="noticesCtrl">
+      <ul>
+        <li ng-repeat="notice in notices">
+          {{notice.title}}
+          <ul>
+            <li ng-repeat="siecle in notice.taxonomy_siecles">
+               |_ {{siecle.title}}
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+    
+  </body>
+</html>

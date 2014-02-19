@@ -1,0 +1,19 @@
+{
+  "name": "monolithe",
+  "description": "Visual research module for mvpf",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "express": "3.x"
+  },
+  "devDependencies": {
+    "gulp": "~3.5.2",
+    "gulp-util": "~2.2.14",
+    "gulp-less": "~1.2.1",
+    "gulp-recess": "~0.2.0",
+    "gulp-minify-css": "~0.3.0",
+    "gulp-uglify": "~0.2.1",
+    "gulp-concat": "~2.1.7",
+    "gulp-watch": "~0.5.0"  
+  }
+}

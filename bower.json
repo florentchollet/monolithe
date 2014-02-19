@@ -1,0 +1,19 @@
+{
+  "name": "monolithe",
+  "version": "0.0.1",
+  "authors": [
+    "rcauquil"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],  
+  "dependencies": {
+    "reset-css": "latest",
+    "angular": "https://github.com/angular/bower-angular/archive/v1.2.13.tar.gz",
+    "rcauquil-less": "https://github.com/rcauquil/function-less.git"
+  }
+}
