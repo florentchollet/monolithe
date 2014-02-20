@@ -14,21 +14,27 @@
   <body ng-app="mnlt">
     
     <section ng-controller="noticesCtrl">
-      
+
       <div>
-        <a ng-click="catName('grandes-dates')">Grandes Dates</a>
-        <a ng-click="catName('histoire')">Histoire</a>
-        <a ng-click="catName('personnalites')">Personnalités</a>
-        <a ng-click="catName('themes')">Thèmes</a>
-        <a ng-click="catName('art-patrimoine')">Art – Patrimoine</a>
+        <button ng-click="catName(currentCat, '')">fr</button>
+        <button ng-click="catName(currentCat, '/en')">en</button>
+        <button ng-click="catName(currentCat, '/de')">de</button>
+      </div>
+      
+      <div ng-init="catName('histoire', '')">
+        <button ng-click="catName('grandes-dates', currentLang)">Grandes Dates</button>
+        <button ng-click="catName('histoire', currentLang)">Histoire</button>
+        <button ng-click="catName('personnalites', currentLang)">Personnalités</button>
+        <button ng-click="catName('themes', currentLang)">Thèmes</button>
+        <button ng-click="catName('art-patrimoine', currentLang)">Art – Patrimoine</button>
       </div>
 
-      
       <ul>
         <li ng-repeat="notice in notices">
           {{notice.title}}
         </li>
       </ul>
+
     </section>
     
   </body>
