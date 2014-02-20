@@ -14,14 +14,19 @@
   <body ng-app="mnlt">
     
     <section ng-controller="noticesCtrl">
+      
+      <div>
+        <a ng-click="catName('grandes-dates')">Grandes Dates</a>
+        <a ng-click="catName('histoire')">Histoire</a>
+        <a ng-click="catName('personnalites')">Personnalités</a>
+        <a ng-click="catName('themes')">Thèmes</a>
+        <a ng-click="catName('art-patrimoine')">Art – Patrimoine</a>
+      </div>
+
+      
       <ul>
         <li ng-repeat="notice in notices">
           {{notice.title}}
-          <ul>
-            <li ng-repeat="siecle in notice.taxonomy_siecles">
-               |_ {{siecle.title}}
-            </li>
-          </ul>
         </li>
       </ul>
     </section>
